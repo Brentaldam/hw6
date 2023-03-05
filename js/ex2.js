@@ -8,5 +8,6 @@ const displayText400 = () => {
     })
     return s;
 }
+
 const dis = displayText400();
 console.log(dis);

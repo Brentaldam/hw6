@@ -14,8 +14,12 @@ Error – Alphanumeric input:
 Error – Decimal input: */
 
 function myFunc(x, y) {
-  return x + y;
+  const sumElement = document.createElement("span");
+  sumElement.style.color="red";
+  return sumElement.textContent = input0 + input1;
+  
 }
+
 
 const input0 = Number(prompt("Please enter the first integer: "));
 const input1 = Number(prompt("Please enter the second integer: "));
@@ -24,10 +28,12 @@ if (Number.isInteger(input0) && Number.isInteger(input1)) {
 
   var input = document.getElementById("content");
   var out1 = myFunc(input0, input1);
+  
+
   input.insertAdjacentHTML("beforeend", `${input0} + ${input1} = ${out1}`);
 }
 else {
   var input = document.getElementById("content");
   var out2 = myFunc(input0, input1);
-  input.insertAdjacentHTML("beforeend", `Error! You must enter integers. You entered \"${input0}\" and \" ${input1}\". Try Again.`);
+  input.insertAdjacentHTML("beforeend", `Error! You must enter integers. You entered \"${input0}\" and \"${input1}\". Try Again.`);
 }

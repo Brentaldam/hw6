@@ -12,6 +12,7 @@ const words = [{
   definition: "figure of speech that juxtaposes elements that appear to be contradictory"
 }];
 
+
 let dl = document.createElement('dl');
 let tbody = document.createElement('tbody');
 dl.appendChild(tbody);

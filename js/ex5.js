@@ -16,6 +16,7 @@ for (let i = 1; i < 13; i++) {
         row_data_1.style.backgroundColor = 'aqua';
     }
 
+    
 }
 table.style.textAlign = 'center';
 table.style.border = 'solid 1px black';
